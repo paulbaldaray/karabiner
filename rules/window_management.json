@@ -1,0 +1,58 @@
+{
+    "description": "Option+T to spawn Kitty terminal",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "t",
+                "modifiers": {
+                    "mandatory": ["option"]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -na Kitty"
+                }
+            ]
+        }
+    ]
+},
+{
+    "description": "Option+X to close current window",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "x",
+                "modifiers": {
+                    "mandatory": ["option"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "w",
+                    "modifiers": ["command"]
+                }
+            ]
+        }
+    ]
+},
+{
+    "description": "Option+Shift+Semicolon to open Mission Control",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "semicolon",
+                "modifiers": {
+                    "mandatory": ["option", "shift"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "mission_control"
+                }
+            ]
+        }
+    ]
+}
